@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.get('/', function (req, res) {
   res.sendFile(__dirname + '/index.html');
 });
-
+// todo: comment
 app.post('/', function (req, res) {
   let query = req.body.cityName;
   let weatherUnit = 'metric';
